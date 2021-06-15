@@ -13,4 +13,9 @@ public class Controller {
     public List<Course> getAllCourses(){
         return Arrays.asList(new Course(1,"Machine Learning","Nitesh Sapkota"),new Course(2,"React JS","Rabee Tamang"));
     }
+
+    @GetMapping("/courses/1")
+    public Course getCourseById(){
+        return new Course(1,"Machine Learning","Nitesh Sapkota");
+    }
 }
